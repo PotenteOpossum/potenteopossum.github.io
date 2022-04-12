@@ -45,6 +45,7 @@ $('#recordModal').on('shown.bs.modal', function () {
 		
 		let width = (parseInt(style.width, 10)-24)/2;
 		let height = parseInt(style.height, 10)/1.5;
+		if (width<300){width=300}
 		console.log(width)
 		console.log(height)
 
@@ -188,6 +189,10 @@ document.querySelector('button#start').addEventListener('click', async () => {
 	let style = window.getComputedStyle(modal);
 	let width = (parseInt(style.width, 10)-24)/2;
 	let height = parseInt(style.height, 10)/1.5;
+
+	if (width < 200) {
+		width = 200
+	}
 
 	const constraints = {
 		video: {
