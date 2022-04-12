@@ -45,7 +45,10 @@ $('#recordModal').on('shown.bs.modal', function () {
 		
 		let width = (parseInt(style.width, 10)-24)/2;
 		let height = parseInt(style.height, 10)/1.5;
-		if (width<300){width=300}
+		if (width < 200) {
+			width = 200
+		}
+		if (height<300){height=300}
 		console.log(width)
 		console.log(height)
 
@@ -197,7 +200,9 @@ document.querySelector('button#start').addEventListener('click', async () => {
 	const constraints = {
 		video: {
 			width: width,
-			height: height
+			height: height,
+			aspectRatio: { exact: 1 },
+			facingMode: "user"
 		}
 	};
 	console.log('Using media constraints:', constraints);
