@@ -44,10 +44,10 @@ $('#recordModal').on('shown.bs.modal', function () {
 		let style = window.getComputedStyle(modal);
 		
 		let width = (parseInt(style.width, 10)-24);
-		let height = parseInt(style.height, 10);
+		let height = parseInt(style.height, 10)/=1.5;
 		if (height<width) {
 			width /= 2;
-			height /= 1.5;
+			// height /= 1.5;
 		} 
 		if (width < 200) {
 			width = 200
