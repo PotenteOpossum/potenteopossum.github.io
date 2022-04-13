@@ -81,7 +81,7 @@ function reload_carousel() {
 								<button type="button" class="btn record-button btn-lg" data-toggle="modal" data-target="#recordModal">Record</button>
 							</div>
 						</div>
-						<div class="row mt-5 justify-content-md-center align-self-end">
+						<div class="row mt-1 justify-content-md-center align-self-end">
 							<div class="col col-lg-6 text-center slide-counter">
 								?/?
 							</div>
