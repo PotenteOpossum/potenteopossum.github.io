@@ -43,12 +43,19 @@ $('#recordModal').on('shown.bs.modal', function () {
 		let modal = document.querySelector('#carouselExampleIndicators');
 		let style = window.getComputedStyle(modal);
 		
-		let width = (parseInt(style.width, 10)-24)/2;
-		let height = parseInt(style.height, 10)/1.5;
+		let width = (parseInt(style.width, 10)-24);
+		let height = parseInt(style.height, 10);
+		if (height<width) {
+			width /= 2;
+			height /= 1.5;
+		} 
 		if (width < 200) {
 			width = 200
 		}
 		if (height<300){height=300}
+		// if (height>width){
+
+		// }
 		console.log(width)
 		console.log(height)
 
