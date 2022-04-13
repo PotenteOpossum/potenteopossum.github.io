@@ -109,7 +109,8 @@ playButton.addEventListener('click', () => {
  
 downloadButton.addEventListener('click', () => {
 	const blob = new Blob(recordedBlobs, {type: 'video/mp4'});
-	const url = window.URL.createObjectURL(blob);
+	window.URL.srcObject = blob;
+	const url = window.URL.srcObject;
 	const a = document.createElement('a');
 	a.style.display = 'none';
 	a.href = url;
