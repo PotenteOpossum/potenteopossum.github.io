@@ -34,36 +34,41 @@ function animate_counter(){
 	}
 	loop(1);
 }
+function return_sizes(){
+	let width = $('#recorder-container').width();
+	let height = $('#modal-body-record').height();
+
+	// let modal = document.querySelector('#carouselExampleIndicators');
+	// let style = window.getComputedStyle(modal);
+	
+	// let width = (parseInt(style.width, 10)-24);
+	// let height = parseInt(style.height, 10)/1.5;
+	// if (height<width) {
+	// 	width /= 2;
+	// }
+	if (width < 200) {
+		width = 200
+	}
+	if (height<300){height=300}
+	// if (height>width){
+
+	// }
+	console.log(width)
+	console.log(height)
+	return {'width':width, 'height': height}
+}
 
 $('#recordModal').on('shown.bs.modal', function () {
 	function loadStyle(){
 		$('#gum').removeClass("animate-border-gum");
 		let recorder = document.querySelector('#recorded');
 		let gum = document.querySelector('#gum');
-		let modal = document.querySelector('#carouselExampleIndicators');
-		let style = window.getComputedStyle(modal);
-		
-		let width = (parseInt(style.width, 10)-24);
-		let height = parseInt(style.height, 10)/=1.5;
-		if (height<width) {
-			width /= 2;
-			// height /= 1.5;
-		} 
-		if (width < 200) {
-			width = 200
-		}
-		if (height<300){height=300}
-		// if (height>width){
+		let sizes = return_sizes()
 
-		// }
-		console.log(width)
-		console.log(height)
-
-
-		recorder.width = width;
-		recorder.height = height;
-		gum.width = width;
-		gum.height = height;
+		recorder.width = sizes.width;
+		recorder.height = sizes.height;
+		gum.width = sizes.width;
+		gum.height = sizes.height;
 		document.getElementById('recorded').style.display = 'none';
 	}
 	setTimeout(loadStyle, 500);
@@ -195,20 +200,13 @@ document.querySelector('button#start').addEventListener('click', async () => {
 	document.getElementById('gum').style.display = '';
 	document.getElementById('recorded').style.display = 'none';
 
-	let modal = document.querySelector('#carouselExampleIndicators');
-	let style = window.getComputedStyle(modal);
-	let width = (parseInt(style.width, 10)-24)/2;
-	let height = parseInt(style.height, 10)/1.5;
-
-	if (width < 200) {
-		width = 200
-	}
+	let sizes = return_sizes()
 
 	const constraints = {
 		video: {
-			width: width,
-			height: height,
-			aspectRatio: { exact: 1 },
+			width: sizes.width,
+			height: sizes.height,
+			// aspectRatio: { exact: 1 },
 			facingMode: "user"
 		}
 	};
