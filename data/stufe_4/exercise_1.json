@@ -1,14 +1,14 @@
 {
 	"slide_0":{
-		"video": "data/img/e1_i1_m24.png" ,
+		"img": "data/img/e1_i1_m24.png" ,
         "text": "Bildpaar 1"
 	},
 	"slide_1":{
-		"video": "data/img/e1_i2_m24.png" ,
+		"img": "data/img/e1_i2_m24.png" ,
         "text": "Bildpaar 2"
 	},
 	"slide_2":{
-		"video": "data/img/e1_i3_m6.png" ,
+		"img": "data/img/e1_i3_m6.png" ,
         "text": "Bildpaar 3"
 	}
 }
