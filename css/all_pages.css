@@ -3,6 +3,9 @@
 	min-height: 70px;
 	max-height: 80px;
 }
+body {
+	background-color: #d4deee !important;
+}
 .exercise-button{
 	white-space: nowrap !important;
 	overflow: hidden !important;

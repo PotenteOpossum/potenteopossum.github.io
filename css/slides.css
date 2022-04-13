@@ -1,8 +1,9 @@
 body {
-	overflow: hidden;
+	overflow: auto;
 }
 .slides-container {
 	height: 80vh;
+	overflow: auto;
 }
 .slides-section {
 	height: 100vh;
@@ -15,6 +16,7 @@ body {
 .carousel-control-prev {
 	/*width: 5vw;*/
 	height: 100%;
+	position: fixed !important;
     align-items: flex-end;
     z-index: 2;
 	/*top: 90%;*/
