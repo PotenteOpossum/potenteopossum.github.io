@@ -24,13 +24,25 @@ body {
 	color: #0c2e44 !important;
 	background-color: #d4deee !important;	
 }
-/*
-	color: #0c2e44
-	background-color: #d4deee;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
 
-	navbar-background-color: #0c2e44;
-	navbar-color: #f97434;
-*/
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0c2e44; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #f97434; 
+}
 
 #navbarResponsive {
 	border-radius: 25px;
