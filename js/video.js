@@ -49,10 +49,8 @@ function return_sizes(){
 	if (width < 200) {
 		width = 200
 	}
-	if (height<300){height=300}
-	// if (height>width){
+	// if (height<300){height=300}
 
-	// }
 	console.log(width)
 	console.log(height)
 	return {'width':width, 'height': height}
@@ -63,7 +61,7 @@ $('#recordModal').on('shown.bs.modal', function () {
 		$('#gum').removeClass("animate-border-gum");
 		let recorder = document.querySelector('#recorded');
 		let gum = document.querySelector('#gum');
-		let sizes = return_sizes()
+		let sizes = return_sizes();
 
 		recorder.width = sizes.width;
 		recorder.height = sizes.height;
