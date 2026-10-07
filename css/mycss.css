@@ -1,0 +1,119 @@
+span.blockspam {
+  display: none;
+}
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(19, 19, 19, .87);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2)!important;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(38, 38, 38, 1);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+.clearfix {
+  padding-bottom: 1rem !important;
+}
+.nav-shadow{
+  background-color: rgba(38, 38, 38, .87);
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.25),0 3px 10px 0 rgba(0,0,0,.2)!important;
+}
+
+#intro {
+  margin-top: 6rem !important;
+}
+body {
+  color: #c4c4c4 !important;
+}
+.text-muted {
+  color: #9b9b9b!important;
+}
+
+.form-label {
+  color: rgb(159 159 159 / 60%) !important;
+}
+/* Extra Things #191919*/
+/*body{background: #eee ;font-family: 'Open Sans', sans-serif;}h3{font-size: 30px; font-weight: 400;text-align: center;margin-top: 50px;}h3 i{color: #444;}*/
+
+
+::-webkit-scrollbar {
+  width: 17px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(19, 19, 19, .27); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #5f5f5f; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #424242; 
+}
+
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 260px) {
+  #intro {
+    margin-top: 11rem !important;
+  }
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  #intro {
+    margin-top: 6rem !important;
+  }
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

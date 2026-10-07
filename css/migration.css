@@ -1,0 +1,16 @@
+/* Small migration fixes; keep the original dark resume design. */
+body { overflow-wrap: anywhere; }
+section, [id] { scroll-margin-top: 8rem; }
+.cover > img { width: 100%; height: 100%; object-fit: cover; }
+#return-to-top { display: grid; place-items: center; color: white; }
+a:focus-visible { outline: 2px solid #39c0ed; outline-offset: 4px; }
+@media (max-width: 767px) {
+  .p-5 { padding: 1.75rem 1.25rem !important; }
+  #intro { margin-top: 11rem !important; }
+  [id] { scroll-margin-top: 11rem; }
+  .cover { height: 520px; }
+  .nav-item + .nav-item { margin-left: .7rem; }
+  .site-nav .nav { flex-wrap: wrap; }
+  .site-nav .nav-link { font-size: .9rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
