@@ -16,8 +16,8 @@ Run `python3 -m http.server 8000` in this directory, then open http://localhost:
 The former https://github.com/PotenteOpossum/potenteopossum.github.io URL redirects to
 https://github.com/PotenteOpossum/SMIILE-II-Project-Website. That is an existing project site,
 so these migration files are isolated rather than replacing that project.
-For the requested user-site URL, create a public repository named `potenteopossum.github.io`
-and place the contents of this directory at its root (including `.nojekyll` and `CNAME`).
+The migration is now published to the new public repository `PotenteOpossum/potenteopossum.github.io`.
+These files are at its root, including `.nojekyll` and `CNAME`.
 
 In Settings → Pages, select Deploy from a branch, `main`, `/ (root)`.
 Set the custom domain to `capozzi.ch` before adding the website DNS records.

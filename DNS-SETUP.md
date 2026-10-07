@@ -51,10 +51,11 @@ Check:
 Initial live checks, before deployment: github.io returned HTTP 404; capozzi.ch and
 www.capozzi.ch did not resolve to website addresses. Deployment and redirects are unverified.
 
-## Manual steps still pending
+## Deployment status and remaining steps
 
-1. Resolve repository destination: create the user-site repository, or explicitly select the existing project.
-2. Publish migration files to the selected repository and configure Pages source/custom domain.
-3. Add the five website DNS records above at Infomaniak without changing email records.
-4. Optionally verify domain ownership using GitHub's generated TXT record.
-5. Enable Enforce HTTPS when available and perform the final URL checks.
+The migration was pushed to PotenteOpossum/potenteopossum.github.io.
+GitHub Pages is configured to publish main at the repository root with custom domain capozzi.ch.
+
+1. Add the five website DNS records above at Infomaniak, preserving email records.
+2. Optionally verify ownership with GitHub's generated TXT record.
+3. After certificate issuance, enable Enforce HTTPS and verify all three URLs.
