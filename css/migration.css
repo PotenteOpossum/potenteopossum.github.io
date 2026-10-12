@@ -30,7 +30,8 @@ a:focus-visible { outline: 2px solid #39c0ed; outline-offset: 4px; }
 #intro > .bg-info { background-color: transparent !important; }
 #intro .cover {
   position: relative;
-  height: clamp(400px, 36vw, 560px);
+  display: grid;
+  min-height: clamp(520px, 40vw, 640px);
   overflow: hidden;
   isolation: isolate;
 }
@@ -45,6 +46,13 @@ a:focus-visible { outline: 2px solid #39c0ed; outline-offset: 4px; }
   animation: banner-arrive 2.1s ease-out both;
 }
 #intro .mask {
+  /* MDB normally absolutely positions this overlay at a fixed height. Keep it
+     in the layout so the hero can grow when its contents wrap on narrow screens. */
+  position: relative;
+  inset: auto;
+  width: 100%;
+  height: auto;
+  min-height: inherit;
   display: grid;
   place-items: center;
   background: linear-gradient(110deg, rgba(8, 15, 27, .58), rgba(10, 19, 31, .18) 54%, rgba(8, 15, 27, .42)) !important;
@@ -98,7 +106,7 @@ a:focus-visible { outline: 2px solid #39c0ed; outline-offset: 4px; }
 }
 @media (max-width: 767px) {
   #intro { border-radius: 0 0 1rem 1rem; }
-  #intro .cover { height: 500px; }
+  #intro .cover { min-height: 520px; }
   #intro .text-center.p-5 { padding: 2rem 1rem !important; }
   #intro .header-bio > div:first-child p { font-size: .85rem; letter-spacing: .05em; }
 }
